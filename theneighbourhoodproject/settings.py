@@ -115,8 +115,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'neighbourhood',
-        'USER': 'melissamalala',
-    'PASSWORD':'abc123',
+        'USER': 'cynthia',
+    'PASSWORD':'marvin',
     }
 }
 
@@ -145,7 +145,7 @@ AUTH_PROFILE_MODULE='neighbourhoodapp.Profile'
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 
