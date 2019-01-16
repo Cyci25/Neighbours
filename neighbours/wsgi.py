@@ -1,5 +1,5 @@
 """
-WSGI config for neighbours project.
+WSGI config for theneighbourhoodproject project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "neighbours.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "theneighbourhoodproject.settings")
 
 application = get_wsgi_application()
