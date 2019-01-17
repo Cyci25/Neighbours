@@ -114,7 +114,7 @@ WSGI_APPLICATION = 'theneighbourhoodproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'neighbourhood',
+        'NAME': 'neighbours',
         'USER': 'cynthia',
     'PASSWORD':'marvin',
     }

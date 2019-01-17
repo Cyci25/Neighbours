@@ -1,14 +1,14 @@
 a {
-  color: #003366;
+  color: firebrick;
 }
 
 body {
-  background-color:#000000!important;
+  background-color:papayawhip;
   height:100%;
 }
 
-#victor {
-  font-family: 'Dosis', sans-serif;"
+#kush {
+  font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
 }
 
