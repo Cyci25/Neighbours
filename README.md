@@ -28,7 +28,7 @@ If you don't have it installed got to [Python.org](https://www.python.org/downlo
 
 ## Getting Started
 * Clone this repository to your local computer and install all the extensions listed in the ``requirements.txt`` file.
-* Ensure you have python3.6 installed in your computer.
+* Ensure you have python3.7 installed in your computer.
 * From the terminal navigate to the cloned project folder.
 * Switch to the virtual environment by entering  ```source virtual/bin/activate``` from the terminal. 
 * Once inside the application, a user will be able to use the application.
