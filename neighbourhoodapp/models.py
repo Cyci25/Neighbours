@@ -83,16 +83,17 @@ class Image(models.Model):
 
 class Neighbourhood(models.Model):
     CITY_CHOICES = (
-        ('London', 'London'),
+        ('Nairobi', 'Nairobi'),
+        ('Kisumu', 'Kisumu'),
+        ('Meru', 'Meru'),
+        ('Isiolo', 'Isiolo'),
+        ('Mandera', 'Mandera'),
+        ('Paris', 'Paris'),
+        ('Wakanda', 'Wakanda'),
+        ('KItale', 'KItale'),
+        ('Mombasa', 'Mombasa'),
+        ('Kilifi', 'Kilifi'),
         ('Liverpool', 'Liverpool'),
-        ('Sheffield', 'Sheffield'),
-        ('Manchester', 'Manchester'),
-        ('Leeds', 'Leeds'),
-        ('Nottingham', 'Nottingham'),
-        ('Brighton', 'Brighton'),
-        ('Bristol', 'Bristol'),
-        ('Oxford', 'Oxford'),
-        ('Cambridge', 'Cambridge'),
 
     )
 

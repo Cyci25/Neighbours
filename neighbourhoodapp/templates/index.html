@@ -7,21 +7,21 @@
       DIRECTORY</strong></h2>
   <div class="card-deck d-flex w-32 " style="background-color:beige">
     {% for neighbourhood in neighbourhoods %}
-    <div class="card w-33 border border-info" class="flash" style="background-color:bisque">
+    <div class="card w-33 border border-info" class="flash" style="background-color:papayawhip">
       <div class="card-title border-bottom">
         <p style="font-size:20px;color:firebrick;"><strong>NEIGHBOURHOOD:</strong>
 
-          <strong><a href="/neighbourhood/{{neighbourhood.id}}">{{neighbourhood.neighbourhood_name}}</a></strong> </p>
+          <strong><a href="/neighbourhood/{{neighbourhood.id}}" style="color:black;">{{neighbourhood.neighbourhood_name}}</a></strong> </p>
       </div>
 
-      <div class="card-body border-info w-33" style="background-color:bisque;">
+      <div class="card-body border-info w-33" style="background-color:papayawhip;">
         <p style="color:firebrick;">{{neighbourhood.neighbourhood_location}} </p>
         <p style=" size: 350px;font-family: 'Times New Roman', Times, serif; text-align:center;color:firebrick;" > Resident Population:
 
           {{ neighbourhood.population}}
         </p>
         <button id="button" style="background-color: lightskyblue;" class="btn btn-lg animated pulse loop"
-         style="font-family:'Dosis', sans-serif; text-align:center;">
+         style="font-family:'Times New Roman', Times, serif; text-align:center;">
           {% if user.profile.neighbourhood_id == None %}
           <a href="{% url 'join' neighbourhood.id %}">
             JOIN THIS NEIGHBOURHOOD</a> </button>
@@ -39,18 +39,18 @@
   <h2 class="animated zoomInLeft" style="text-align:center;font-size:40px;color:firebrick;"><strong>BUSINESS DIRECTORY</strong></h2>
   <div class="card-deck d-flex">
     {% for business in businesses %}
-    <div class="card w-33 border border-info" style="background-color:bisque;">
+    <div class="card w-33 border border-info" style="background-color:papayawhip;">
       <div class="card-title border-bottom">
-        <p id="p" style="font-size:20px;color:firebrick;"> <a href="{% url 'business' business.id %}"><strong>BUSINESS
+        <p id="p" style="font-size:20px;color:firebrick;"> <a href="{% url 'business' business.id %} "style="color:firebrick;"><strong>BUSINESS
               NAME:</strong>
 
-            <strong> {{business.business_name}}</strong> </a></p>
+            <strong style="color:black"> {{business.business_name}}</strong> </a></p>
       </div>
       <hr>
       <div class="card-body border-info w-33">
 
         <p style="color:firebrick;">{{business.neighbourhood_id}} </p>
-        <p style="font-family: 'Dosis', sans-serif; text-align:center;color:firebrick;"> Contact Information:
+        <p style="font-family: 'Times New Roman', Times, serif; text-align:center;color:firebrick;"> Contact Information:
           <br>
           {{ business.business_email_address}}
         </p>
@@ -65,7 +65,7 @@
 <br>
 <br>
 
-<div class="container" class="jumbotron text-center mt-1" style="background-color:beige;font-family: 'Dosis', sans-serif;">
+<div class="container" class="jumbotron text-center mt-1" style="background-color:beige;font-family: 'Times New Roman', Times, serif;">
 
   <form class="container" action="{%url 'homePage'%}" method="post" id="formletter" style="color:#ffffff;">
     {%csrf_token%} {% bootstrap_form letterForm %}
@@ -98,9 +98,13 @@
 
 {% endblock %} {% block scripts %} {{block.super}}
 <script type="text/javascript" src="{%static 'js/scripts.js'%}"></script>
+
 <style>
   body {
-    background-color: papayawhip;
+    background-color: bisque;
+  }
+  .flash{
+    padding-bottom: 100px;
   }
 </style>
 {% endblock %}
